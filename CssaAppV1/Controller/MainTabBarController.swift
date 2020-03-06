@@ -17,6 +17,11 @@ class MainTabBarController: UITabBarController {
         firstPageNavController.tabBarItem.title = "首页"
         //firstNavController.tabBarItem.image = UIIamge(named: imageName)
         
-        viewControllers = [firstPageNavController]
+        let handBookController = HandBookViewController()
+        let handBookNavController = UINavigationController(rootViewController: handBookController)
+        handBookNavController.tabBarItem.title = "新生手册"
+        //handBookNavController.tabBarItem.image = UIImage(named: <#T##String#>)
+        
+        viewControllers = [firstPageNavController,handBookNavController]
     }
 }
