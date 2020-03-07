@@ -15,6 +15,7 @@ class FirstPageViewController: UIViewController {
         scrollimageView.translatesAutoresizingMaskIntoConstraints = false
         scrollimageView.layer.cornerRadius = 8
         scrollimageView.layer.masksToBounds = true
+        scrollimageView.isPagingEnabled = true
         return scrollimageView
     }()
     
@@ -87,6 +88,10 @@ class FirstPageViewController: UIViewController {
         setupPostsContainerView()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        processScrollImageView()
+    }
+    
     func setupPostsContainerView() {
         postsContainerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         postsContainerView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
@@ -106,19 +111,6 @@ class FirstPageViewController: UIViewController {
         postImagesView.topAnchor.constraint(equalTo: postsContainerView.topAnchor, constant: 12).isActive = true
         postImagesView.widthAnchor.constraint(equalTo: postsContainerView.widthAnchor, constant: -12).isActive = true
         postImagesView.heightAnchor.constraint(equalToConstant: 200).isActive = true
-        
-        var images = [UIImage]()
-        images = [UIImage(named:"date1")!,UIImage(named:"date2")!,UIImage(named:"date3")!,UIImage(named:"date4")!]
-        var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
-        for count in 0..<images.count{
-            frame.origin.x = postImagesView.frame.size.width*CGFloat(count)
-            frame.size = postImagesView.frame.size
-            let imageView = UIImageView(frame:frame)
-            imageView.image = images[count]
-            postImagesView.contentSize = CGSize(width: postImagesView.frame.width * CGFloat(images.count), height: postImagesView.frame.size.height)
-            postImagesView.addSubview(imageView)
-
-        }
     }
     
     func setupPost1View() {
@@ -165,5 +157,21 @@ class FirstPageViewController: UIViewController {
         contentText2.leftAnchor.constraint(equalTo: post2View.leftAnchor, constant: 12).isActive = true
         contentText2.rightAnchor.constraint(equalTo: post2View.rightAnchor, constant: -12).isActive = true
         contentText2.bottomAnchor.constraint(equalTo: post2View.bottomAnchor, constant: -12).isActive = true
+    }
+    
+    func processScrollImageView(){
+        var images = [UIImage]()
+        images = [UIImage(named:"date1")!,UIImage(named:"date2")!,UIImage(named:"date3")!,UIImage(named:"date4")!]
+        var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+        for count in 0..<images.count{
+            frame.origin.x = postImagesView.frame.size.width*CGFloat(count)
+            frame.size = postImagesView.frame.size
+            let imageView = UIImageView(frame:frame)
+            imageView.image = images[count]
+            imageView.layer.cornerRadius = 8
+            imageView.layer.masksToBounds = true //圆角
+            postImagesView.contentSize = CGSize(width: postImagesView.frame.width * CGFloat(images.count), height: postImagesView.frame.size.height)
+            postImagesView.addSubview(imageView)
+        }
     }
 }
