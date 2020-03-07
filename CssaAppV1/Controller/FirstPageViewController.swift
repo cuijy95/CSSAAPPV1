@@ -10,13 +10,12 @@ import UIKit
 
 class FirstPageViewController: UIViewController {
     
-    let postImagesView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "sampleImage")
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.layer.cornerRadius = 8
-        imageView.layer.masksToBounds = true
-        return imageView
+    let postImagesView: UIScrollView = {
+        let scrollimageView = UIScrollView()
+        scrollimageView.translatesAutoresizingMaskIntoConstraints = false
+        scrollimageView.layer.cornerRadius = 8
+        scrollimageView.layer.masksToBounds = true
+        return scrollimageView
     }()
     
     let postsContainerView: UIScrollView = {
@@ -107,6 +106,19 @@ class FirstPageViewController: UIViewController {
         postImagesView.topAnchor.constraint(equalTo: postsContainerView.topAnchor, constant: 12).isActive = true
         postImagesView.widthAnchor.constraint(equalTo: postsContainerView.widthAnchor, constant: -12).isActive = true
         postImagesView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        
+        var images = [UIImage]()
+        images = [UIImage(named:"date1")!,UIImage(named:"date2")!,UIImage(named:"date3")!,UIImage(named:"date4")!]
+        var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+        for count in 0..<images.count{
+            frame.origin.x = postImagesView.frame.size.width*CGFloat(count)
+            frame.size = postImagesView.frame.size
+            let imageView = UIImageView(frame:frame)
+            imageView.image = images[count]
+            postImagesView.contentSize = CGSize(width: postImagesView.frame.width * CGFloat(images.count), height: postImagesView.frame.size.height)
+            postImagesView.addSubview(imageView)
+
+        }
     }
     
     func setupPost1View() {
