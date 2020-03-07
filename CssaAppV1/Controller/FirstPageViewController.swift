@@ -84,31 +84,29 @@ class FirstPageViewController: UIViewController {
         navigationItem.title = "首页"
         view.backgroundColor = UIColor.black
         
-        view.addSubview(postImagesView)
         view.addSubview(postsContainerView)
-        
-        setupPostImagesView()
         setupPostsContainerView()
-    }
-    
-
-    func setupPostImagesView(){
-        postImagesView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        postImagesView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 12).isActive = true
-        postImagesView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
-        postImagesView.heightAnchor.constraint(equalToConstant: 200).isActive = true
     }
     
     func setupPostsContainerView() {
         postsContainerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        postsContainerView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -12).isActive = true
-        postsContainerView.topAnchor.constraint(equalTo: postImagesView.bottomAnchor, constant: 12).isActive = true
-        postsContainerView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -12).isActive = true
+        postsContainerView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        postsContainerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        postsContainerView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         
+        postsContainerView.addSubview(postImagesView)
+        setupPostImagesView()
         postsContainerView.addSubview(post1View)
         setupPost1View()
         postsContainerView.addSubview(post2View)
         setupPost2View()
+    }
+    
+    func setupPostImagesView(){
+        postImagesView.centerXAnchor.constraint(equalTo: postsContainerView.centerXAnchor).isActive = true
+        postImagesView.topAnchor.constraint(equalTo: postsContainerView.topAnchor, constant: 12).isActive = true
+        postImagesView.widthAnchor.constraint(equalTo: postsContainerView.widthAnchor, constant: -12).isActive = true
+        postImagesView.heightAnchor.constraint(equalToConstant: 200).isActive = true
     }
     
     func setupPost1View() {
@@ -117,7 +115,7 @@ class FirstPageViewController: UIViewController {
         setupPost1Texts()
         
         post1View.centerXAnchor.constraint(equalTo: postsContainerView.centerXAnchor).isActive = true
-        post1View.topAnchor.constraint(equalTo: postsContainerView.topAnchor, constant: 12).isActive = true
+        post1View.topAnchor.constraint(equalTo: postImagesView.bottomAnchor, constant: 12).isActive = true
         post1View.widthAnchor.constraint(equalTo: postsContainerView.widthAnchor, constant: -12).isActive = true
         post1View.bottomAnchor.constraint(greaterThanOrEqualTo: contentText1.bottomAnchor, constant: 12).isActive = true
     }
@@ -140,7 +138,7 @@ class FirstPageViewController: UIViewController {
         setupPost2Texts()
         
         post2View.centerXAnchor.constraint(equalTo: postsContainerView.centerXAnchor).isActive = true
-        post2View.topAnchor.constraint(equalTo: post1View.bottomAnchor, constant: 24).isActive = true
+        post2View.topAnchor.constraint(equalTo: post1View.bottomAnchor, constant: 12).isActive = true
         post2View.widthAnchor.constraint(equalTo: postsContainerView.widthAnchor, constant: -12).isActive = true
         post2View.bottomAnchor.constraint(lessThanOrEqualTo: postsContainerView.bottomAnchor, constant: -12).isActive = true
     }

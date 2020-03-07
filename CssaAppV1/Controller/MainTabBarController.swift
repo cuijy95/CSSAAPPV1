@@ -22,6 +22,11 @@ class MainTabBarController: UITabBarController {
         handBookNavController.tabBarItem.title = "新生手册"
         //handBookNavController.tabBarItem.image = UIImage(named: <#T##String#>)
         
-        viewControllers = [firstPageNavController,handBookNavController]
+        let cssaPageController = CssaPageController()
+        let cssaPageNavController = UINavigationController(rootViewController: cssaPageController)
+        cssaPageNavController.tabBarItem.title = "学生会"
+        
+        
+        viewControllers = [firstPageNavController, handBookNavController, cssaPageNavController]
     }
 }

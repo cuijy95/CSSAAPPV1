@@ -12,6 +12,9 @@
 		B20A4E622411BC8B002DD170 /* HandBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4E612411BC8B002DD170 /* HandBookViewController.swift */; };
 		B20A4E652411D815002DD170 /* HandBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4E642411D815002DD170 /* HandBook.swift */; };
 		B20A4E672411EA42002DD170 /* HandBookContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4E662411EA42002DD170 /* HandBookContentViewController.swift */; };
+		B20A4E69241327C5002DD170 /* CssaPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4E68241327C5002DD170 /* CssaPageController.swift */; };
+		B20A4E6B2413619E002DD170 /* CssaPageContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4E6A2413619E002DD170 /* CssaPageContentController.swift */; };
+		B20A4E6D24136208002DD170 /* CssaPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4E6C24136208002DD170 /* CssaPage.swift */; };
 		B2905BE3241022EC00C9F03E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2905BE2241022EC00C9F03E /* AppDelegate.swift */; };
 		B2905BE5241022EC00C9F03E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2905BE4241022EC00C9F03E /* ViewController.swift */; };
 		B2905BE8241022EC00C9F03E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2905BE6241022EC00C9F03E /* Main.storyboard */; };
@@ -44,6 +47,9 @@
 		B20A4E612411BC8B002DD170 /* HandBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandBookViewController.swift; sourceTree = "<group>"; };
 		B20A4E642411D815002DD170 /* HandBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandBook.swift; sourceTree = "<group>"; };
 		B20A4E662411EA42002DD170 /* HandBookContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandBookContentViewController.swift; sourceTree = "<group>"; };
+		B20A4E68241327C5002DD170 /* CssaPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CssaPageController.swift; sourceTree = "<group>"; };
+		B20A4E6A2413619E002DD170 /* CssaPageContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CssaPageContentController.swift; sourceTree = "<group>"; };
+		B20A4E6C24136208002DD170 /* CssaPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CssaPage.swift; sourceTree = "<group>"; };
 		B2905BDF241022EC00C9F03E /* CssaAppV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CssaAppV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2905BE2241022EC00C9F03E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2905BE4241022EC00C9F03E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +97,8 @@
 				B20A4E5F24106BA1002DD170 /* FirstPageViewController.swift */,
 				B20A4E612411BC8B002DD170 /* HandBookViewController.swift */,
 				B20A4E662411EA42002DD170 /* HandBookContentViewController.swift */,
+				B20A4E68241327C5002DD170 /* CssaPageController.swift */,
+				B20A4E6A2413619E002DD170 /* CssaPageContentController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -99,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				B20A4E642411D815002DD170 /* HandBook.swift */,
+				B20A4E6C24136208002DD170 /* CssaPage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -293,7 +302,10 @@
 				B20A4E672411EA42002DD170 /* HandBookContentViewController.swift in Sources */,
 				B20A4E652411D815002DD170 /* HandBook.swift in Sources */,
 				B20A4E5E241068C7002DD170 /* MainTabBarController.swift in Sources */,
+				B20A4E69241327C5002DD170 /* CssaPageController.swift in Sources */,
 				B2905BE3241022EC00C9F03E /* AppDelegate.swift in Sources */,
+				B20A4E6D24136208002DD170 /* CssaPage.swift in Sources */,
+				B20A4E6B2413619E002DD170 /* CssaPageContentController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

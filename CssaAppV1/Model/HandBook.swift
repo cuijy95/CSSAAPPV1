@@ -6,7 +6,7 @@
 //  Copyright © 2020 CSSA. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class HandBook {
     private var catalog: String
