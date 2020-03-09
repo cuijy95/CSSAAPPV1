@@ -13,6 +13,7 @@
 		0FB00E792415EECB00B61340 /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E782415EECB00B61340 /* ToolsViewController.swift */; };
 		0FB00E7B2415EF2500B61340 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E7A2415EF2500B61340 /* MapViewController.swift */; };
 		0FB00E7D2415EF4F00B61340 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E7C2415EF4F00B61340 /* DateViewController.swift */; };
+		0FB00E7F2416D50300B61340 /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E7E2416D50300B61340 /* FirstPage.swift */; };
 		B20A4E5E241068C7002DD170 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4E5D241068C7002DD170 /* MainTabBarController.swift */; };
 		B20A4E6024106BA1002DD170 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4E5F24106BA1002DD170 /* FirstPageViewController.swift */; };
 		B20A4E622411BC8B002DD170 /* HandBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4E612411BC8B002DD170 /* HandBookViewController.swift */; };
@@ -54,6 +55,7 @@
 		0FB00E782415EECB00B61340 /* ToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
 		0FB00E7A2415EF2500B61340 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0FB00E7C2415EF4F00B61340 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		0FB00E7E2416D50300B61340 /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
 		B20A4E5D241068C7002DD170 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		B20A4E5F24106BA1002DD170 /* FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
 		B20A4E612411BC8B002DD170 /* HandBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandBookViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				B20A4E642411D815002DD170 /* HandBook.swift */,
 				B20A4E6C24136208002DD170 /* CssaPage.swift */,
 				0FB00E6E2415DDAD00B61340 /* ActivityPage.swift */,
+				0FB00E7E2416D50300B61340 /* FirstPage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				0FB00E792415EECB00B61340 /* ToolsViewController.swift in Sources */,
 				B20A4E5E241068C7002DD170 /* MainTabBarController.swift in Sources */,
 				0FB00E712415EA1800B61340 /* ActivityContentViewController.swift in Sources */,
+				0FB00E7F2416D50300B61340 /* FirstPage.swift in Sources */,
 				B20A4E69241327C5002DD170 /* CssaPageController.swift in Sources */,
 				B2905BE3241022EC00C9F03E /* AppDelegate.swift in Sources */,
 				B20A4E6D24136208002DD170 /* CssaPage.swift in Sources */,
