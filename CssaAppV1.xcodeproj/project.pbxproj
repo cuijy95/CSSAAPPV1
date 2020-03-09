@@ -14,6 +14,7 @@
 		0FB00E7B2415EF2500B61340 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E7A2415EF2500B61340 /* MapViewController.swift */; };
 		0FB00E7D2415EF4F00B61340 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E7C2415EF4F00B61340 /* DateViewController.swift */; };
 		0FB00E7F2416D50300B61340 /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E7E2416D50300B61340 /* FirstPage.swift */; };
+		0FB00E812416DEAC00B61340 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FB00E802416DEAB00B61340 /* GoogleService-Info.plist */; };
 		B20A4E5E241068C7002DD170 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4E5D241068C7002DD170 /* MainTabBarController.swift */; };
 		B20A4E6024106BA1002DD170 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4E5F24106BA1002DD170 /* FirstPageViewController.swift */; };
 		B20A4E622411BC8B002DD170 /* HandBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4E612411BC8B002DD170 /* HandBookViewController.swift */; };
@@ -56,6 +57,7 @@
 		0FB00E7A2415EF2500B61340 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0FB00E7C2415EF4F00B61340 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		0FB00E7E2416D50300B61340 /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
+		0FB00E802416DEAB00B61340 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B20A4E5D241068C7002DD170 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		B20A4E5F24106BA1002DD170 /* FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
 		B20A4E612411BC8B002DD170 /* HandBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandBookViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				B2905BE9241022F600C9F03E /* Assets.xcassets */,
 				B2905BEB241022F600C9F03E /* LaunchScreen.storyboard */,
 				B2905BEE241022F600C9F03E /* Info.plist */,
+				0FB00E802416DEAB00B61340 /* GoogleService-Info.plist */,
 			);
 			path = CssaAppV1;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2905BED241022F600C9F03E /* LaunchScreen.storyboard in Resources */,
+				0FB00E812416DEAC00B61340 /* GoogleService-Info.plist in Resources */,
 				B2905BEA241022F600C9F03E /* Assets.xcassets in Resources */,
 				B2905BE8241022EC00C9F03E /* Main.storyboard in Resources */,
 			);
