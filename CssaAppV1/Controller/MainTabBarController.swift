@@ -30,7 +30,10 @@ class MainTabBarController: UITabBarController {
         let activityNavController = UINavigationController(rootViewController: activityController)
         activityNavController.tabBarItem.title = "活动资讯"
         
+        let toolController = ToolsViewController()
+        let toolNavController = UINavigationController(rootViewController: toolController)
+        toolNavController.tabBarItem.title = "工具"
         
-        viewControllers = [firstPageNavController, handBookNavController, cssaPageNavController,activityNavController]
+        viewControllers = [firstPageNavController, handBookNavController, cssaPageNavController,activityNavController,toolNavController]
     }
 }
