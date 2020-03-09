@@ -12,7 +12,7 @@ class MapViewController: UIViewController {
     
     let mapImageView:UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "map")
+        imageView.image = UIImage(named: "date1")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.layer.cornerRadius = 8
         imageView.layer.masksToBounds = true
