@@ -10,9 +10,9 @@
 		0FB00E6D2415D18100B61340 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E6C2415D18100B61340 /* ActivityViewController.swift */; };
 		0FB00E6F2415DDAD00B61340 /* ActivityPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E6E2415DDAD00B61340 /* ActivityPage.swift */; };
 		0FB00E712415EA1800B61340 /* ActivityContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E702415EA1800B61340 /* ActivityContentViewController.swift */; };
-		0FB00E752415EB4100B61340 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E722415EB4100B61340 /* DateViewController.swift */; };
-		0FB00E762415EB4100B61340 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E732415EB4100B61340 /* MapViewController.swift */; };
-		0FB00E772415EB4100B61340 /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E742415EB4100B61340 /* ToolsViewController.swift */; };
+		0FB00E792415EECB00B61340 /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E782415EECB00B61340 /* ToolsViewController.swift */; };
+		0FB00E7B2415EF2500B61340 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E7A2415EF2500B61340 /* MapViewController.swift */; };
+		0FB00E7D2415EF4F00B61340 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E7C2415EF4F00B61340 /* DateViewController.swift */; };
 		B20A4E5E241068C7002DD170 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4E5D241068C7002DD170 /* MainTabBarController.swift */; };
 		B20A4E6024106BA1002DD170 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4E5F24106BA1002DD170 /* FirstPageViewController.swift */; };
 		B20A4E622411BC8B002DD170 /* HandBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4E612411BC8B002DD170 /* HandBookViewController.swift */; };
@@ -51,9 +51,9 @@
 		0FB00E6C2415D18100B61340 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		0FB00E6E2415DDAD00B61340 /* ActivityPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityPage.swift; sourceTree = "<group>"; };
 		0FB00E702415EA1800B61340 /* ActivityContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityContentViewController.swift; sourceTree = "<group>"; };
-		0FB00E722415EB4100B61340 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateViewController.swift; path = ../../../CssaAppV1/CssaAppV1/Controller/DateViewController.swift; sourceTree = "<group>"; };
-		0FB00E732415EB4100B61340 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../../../CssaAppV1/CssaAppV1/Controller/MapViewController.swift; sourceTree = "<group>"; };
-		0FB00E742415EB4100B61340 /* ToolsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToolsViewController.swift; path = ../../../CssaAppV1/CssaAppV1/Controller/ToolsViewController.swift; sourceTree = "<group>"; };
+		0FB00E782415EECB00B61340 /* ToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
+		0FB00E7A2415EF2500B61340 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0FB00E7C2415EF4F00B61340 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		B20A4E5D241068C7002DD170 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		B20A4E5F24106BA1002DD170 /* FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
 		B20A4E612411BC8B002DD170 /* HandBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandBookViewController.swift; sourceTree = "<group>"; };
@@ -105,9 +105,6 @@
 		B20A4E5C241068AB002DD170 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0FB00E722415EB4100B61340 /* DateViewController.swift */,
-				0FB00E732415EB4100B61340 /* MapViewController.swift */,
-				0FB00E742415EB4100B61340 /* ToolsViewController.swift */,
 				B20A4E5D241068C7002DD170 /* MainTabBarController.swift */,
 				B20A4E5F24106BA1002DD170 /* FirstPageViewController.swift */,
 				B20A4E612411BC8B002DD170 /* HandBookViewController.swift */,
@@ -116,6 +113,9 @@
 				B20A4E6A2413619E002DD170 /* CssaPageContentController.swift */,
 				0FB00E6C2415D18100B61340 /* ActivityViewController.swift */,
 				0FB00E702415EA1800B61340 /* ActivityContentViewController.swift */,
+				0FB00E782415EECB00B61340 /* ToolsViewController.swift */,
+				0FB00E7A2415EF2500B61340 /* MapViewController.swift */,
+				0FB00E7C2415EF4F00B61340 /* DateViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -314,21 +314,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FB00E7D2415EF4F00B61340 /* DateViewController.swift in Sources */,
 				B20A4E6024106BA1002DD170 /* FirstPageViewController.swift in Sources */,
 				0FB00E6F2415DDAD00B61340 /* ActivityPage.swift in Sources */,
-				0FB00E752415EB4100B61340 /* DateViewController.swift in Sources */,
 				B20A4E622411BC8B002DD170 /* HandBookViewController.swift in Sources */,
-				0FB00E772415EB4100B61340 /* ToolsViewController.swift in Sources */,
 				B2905BE5241022EC00C9F03E /* ViewController.swift in Sources */,
 				B20A4E672411EA42002DD170 /* HandBookContentViewController.swift in Sources */,
 				B20A4E652411D815002DD170 /* HandBook.swift in Sources */,
+				0FB00E792415EECB00B61340 /* ToolsViewController.swift in Sources */,
 				B20A4E5E241068C7002DD170 /* MainTabBarController.swift in Sources */,
 				0FB00E712415EA1800B61340 /* ActivityContentViewController.swift in Sources */,
 				B20A4E69241327C5002DD170 /* CssaPageController.swift in Sources */,
 				B2905BE3241022EC00C9F03E /* AppDelegate.swift in Sources */,
 				B20A4E6D24136208002DD170 /* CssaPage.swift in Sources */,
 				B20A4E6B2413619E002DD170 /* CssaPageContentController.swift in Sources */,
-				0FB00E762415EB4100B61340 /* MapViewController.swift in Sources */,
+				0FB00E7B2415EF2500B61340 /* MapViewController.swift in Sources */,
 				0FB00E6D2415D18100B61340 /* ActivityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
