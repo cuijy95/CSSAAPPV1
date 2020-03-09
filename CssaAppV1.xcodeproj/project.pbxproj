@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FB00E6D2415D18100B61340 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E6C2415D18100B61340 /* ActivityViewController.swift */; };
+		0FB00E6F2415DDAD00B61340 /* ActivityPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E6E2415DDAD00B61340 /* ActivityPage.swift */; };
+		0FB00E712415EA1800B61340 /* ActivityContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E702415EA1800B61340 /* ActivityContentViewController.swift */; };
 		B20A4E5E241068C7002DD170 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4E5D241068C7002DD170 /* MainTabBarController.swift */; };
 		B20A4E6024106BA1002DD170 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4E5F24106BA1002DD170 /* FirstPageViewController.swift */; };
 		B20A4E622411BC8B002DD170 /* HandBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A4E612411BC8B002DD170 /* HandBookViewController.swift */; };
@@ -42,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FB00E6C2415D18100B61340 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		0FB00E6E2415DDAD00B61340 /* ActivityPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityPage.swift; sourceTree = "<group>"; };
+		0FB00E702415EA1800B61340 /* ActivityContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityContentViewController.swift; sourceTree = "<group>"; };
 		B20A4E5D241068C7002DD170 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		B20A4E5F24106BA1002DD170 /* FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
 		B20A4E612411BC8B002DD170 /* HandBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandBookViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +105,8 @@
 				B20A4E662411EA42002DD170 /* HandBookContentViewController.swift */,
 				B20A4E68241327C5002DD170 /* CssaPageController.swift */,
 				B20A4E6A2413619E002DD170 /* CssaPageContentController.swift */,
+				0FB00E6C2415D18100B61340 /* ActivityViewController.swift */,
+				0FB00E702415EA1800B61340 /* ActivityContentViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -108,6 +116,7 @@
 			children = (
 				B20A4E642411D815002DD170 /* HandBook.swift */,
 				B20A4E6C24136208002DD170 /* CssaPage.swift */,
+				0FB00E6E2415DDAD00B61340 /* ActivityPage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,15 +306,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B20A4E6024106BA1002DD170 /* FirstPageViewController.swift in Sources */,
+				0FB00E6F2415DDAD00B61340 /* ActivityPage.swift in Sources */,
 				B20A4E622411BC8B002DD170 /* HandBookViewController.swift in Sources */,
 				B2905BE5241022EC00C9F03E /* ViewController.swift in Sources */,
 				B20A4E672411EA42002DD170 /* HandBookContentViewController.swift in Sources */,
 				B20A4E652411D815002DD170 /* HandBook.swift in Sources */,
 				B20A4E5E241068C7002DD170 /* MainTabBarController.swift in Sources */,
+				0FB00E712415EA1800B61340 /* ActivityContentViewController.swift in Sources */,
 				B20A4E69241327C5002DD170 /* CssaPageController.swift in Sources */,
 				B2905BE3241022EC00C9F03E /* AppDelegate.swift in Sources */,
 				B20A4E6D24136208002DD170 /* CssaPage.swift in Sources */,
 				B20A4E6B2413619E002DD170 /* CssaPageContentController.swift in Sources */,
+				0FB00E6D2415D18100B61340 /* ActivityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

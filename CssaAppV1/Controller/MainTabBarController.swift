@@ -26,7 +26,11 @@ class MainTabBarController: UITabBarController {
         let cssaPageNavController = UINavigationController(rootViewController: cssaPageController)
         cssaPageNavController.tabBarItem.title = "学生会"
         
+        let activityController = ActivityViewController()
+        let activityNavController = UINavigationController(rootViewController: activityController)
+        activityNavController.tabBarItem.title = "活动资讯"
         
-        viewControllers = [firstPageNavController, handBookNavController, cssaPageNavController]
+        
+        viewControllers = [firstPageNavController, handBookNavController, cssaPageNavController,activityNavController]
     }
 }
