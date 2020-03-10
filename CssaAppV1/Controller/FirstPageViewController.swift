@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class FirstPageViewController: UIViewController {
     
@@ -84,12 +85,40 @@ class FirstPageViewController: UIViewController {
         navigationItem.title = "首页"
         view.backgroundColor = UIColor.black
         
+        fetchFirsPageModel()
+        
         view.addSubview(postsContainerView)
         setupPostsContainerView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         processScrollImageView()
+    }
+    
+    func fetchFirsPageModel(){
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        ref.child("FistPageModels").child("model1").observe(DataEventType.value) { (snapshot) in
+            //get FirstPage model
+            let value = snapshot.value as? NSDictionary
+            let post1Content = value?["post1Content"] as? String ?? ""
+            let post1Title = value?["post1Title"] as? String ?? ""
+            let post2Content = value?["post2Content"] as? String ?? ""
+            let post2Title = value?["post2Title"] as? String ?? ""
+            let scrollImages = value?["scrollImages"] as? [String] ?? [""]
+            
+            let firstPageModel = FirstPage(scrollImages: scrollImages, post1Title: post1Title, post1Content: post1Content, post2Title: post2Title, post2Content: post2Content)
+            
+            self.setupRemoteFirstPage(firstPageModel: firstPageModel)
+        }
+    }
+    
+    func setupRemoteFirstPage(firstPageModel : FirstPage){
+        titleText1.text = firstPageModel.getPost1Title()
+        contentText1.text = firstPageModel.getPost1Content()
+        titleText2.text = firstPageModel.getPost2Title()
+        contentText2.text = firstPageModel.getPost2Content()
+        //TODO: set remote image
     }
     
     func setupPostsContainerView() {
