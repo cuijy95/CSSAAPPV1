@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F4BF9A924199E24000CE896 /* MapPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4BF9A824199E24000CE896 /* MapPage.swift */; };
+		0F4BF9AB24199E93000CE896 /* DatePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4BF9AA24199E93000CE896 /* DatePage.swift */; };
 		0FB00E6D2415D18100B61340 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E6C2415D18100B61340 /* ActivityViewController.swift */; };
 		0FB00E6F2415DDAD00B61340 /* ActivityPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E6E2415DDAD00B61340 /* ActivityPage.swift */; };
 		0FB00E712415EA1800B61340 /* ActivityContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB00E702415EA1800B61340 /* ActivityContentViewController.swift */; };
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F4BF9A824199E24000CE896 /* MapPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPage.swift; sourceTree = "<group>"; };
+		0F4BF9AA24199E93000CE896 /* DatePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePage.swift; sourceTree = "<group>"; };
 		0FB00E6C2415D18100B61340 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		0FB00E6E2415DDAD00B61340 /* ActivityPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityPage.swift; sourceTree = "<group>"; };
 		0FB00E702415EA1800B61340 /* ActivityContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityContentViewController.swift; sourceTree = "<group>"; };
@@ -131,7 +135,6 @@
 				A0D76B9111233DD706BDE26F /* Pods-CssaAppV1Tests.debug.xcconfig */,
 				FC541AC5DEF604547638D84E /* Pods-CssaAppV1Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -160,6 +163,8 @@
 				B20A4E6C24136208002DD170 /* CssaPage.swift */,
 				0FB00E6E2415DDAD00B61340 /* ActivityPage.swift */,
 				0FB00E7E2416D50300B61340 /* FirstPage.swift */,
+				0F4BF9A824199E24000CE896 /* MapPage.swift */,
+				0F4BF9AA24199E93000CE896 /* DatePage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -477,8 +482,10 @@
 				B2905BE5241022EC00C9F03E /* ViewController.swift in Sources */,
 				B20A4E672411EA42002DD170 /* HandBookContentViewController.swift in Sources */,
 				B20A4E652411D815002DD170 /* HandBook.swift in Sources */,
+				0F4BF9AB24199E93000CE896 /* DatePage.swift in Sources */,
 				0FB00E792415EECB00B61340 /* ToolsViewController.swift in Sources */,
 				B20A4E5E241068C7002DD170 /* MainTabBarController.swift in Sources */,
+				0F4BF9A924199E24000CE896 /* MapPage.swift in Sources */,
 				0FB00E712415EA1800B61340 /* ActivityContentViewController.swift in Sources */,
 				0FB00E7F2416D50300B61340 /* FirstPage.swift in Sources */,
 				B20A4E69241327C5002DD170 /* CssaPageController.swift in Sources */,

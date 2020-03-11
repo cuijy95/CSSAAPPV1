@@ -106,7 +106,6 @@ class FirstPageViewController: UIViewController {
             let post2Content = value?["post2Content"] as? String ?? ""
             let post2Title = value?["post2Title"] as? String ?? ""
             let scrollImages = value?["scrollImages"] as? [String] ?? [""]
-            
             let firstPageModel = FirstPage(scrollImages: scrollImages, post1Title: post1Title, post1Content: post1Content, post2Title: post2Title, post2Content: post2Content)
             
             self.setupRemoteFirstPage(firstPageModel: firstPageModel)

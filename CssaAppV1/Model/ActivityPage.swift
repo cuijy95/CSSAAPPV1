@@ -31,4 +31,15 @@ class ActivityPage {
     func getImage() -> String {
         return self.activityImage
     }
+    func setTitle(title:String) {
+        self.activityTitle = title
+    }
+    
+    func setSubTitle(subTitle:String) {
+        self.activitySubTitle = subTitle
+    }
+    
+    func setImage(image:String) {
+        self.activityImage = image
+    }
 }
