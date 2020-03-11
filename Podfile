@@ -9,6 +9,7 @@ target 'CssaAppV1' do
 pod 'Firebase/Analytics'
 pod 'Firebase/Database'
 pod 'Firebase/Storage'
+pod 'FirebaseUI/Storage'
 
   target 'CssaAppV1Tests' do
     inherit! :search_paths

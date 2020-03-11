@@ -8,8 +8,11 @@
 
 import UIKit
 import Firebase
+import FirebaseUI
 
 class FirstPageViewController: UIViewController {
+    
+    var remoteImage : UIImage?
     
     let postImagesView: UIScrollView = {
         let scrollimageView = UIScrollView()
@@ -47,7 +50,7 @@ class FirstPageViewController: UIViewController {
     let contentText1: UILabel = {
         let label = UILabel()
         label.backgroundColor = UIColor.blue
-        label.text = "公告1内容。。。\n ....。.\n asdasdasdasdasdasdas。\n......"
+        label.text = "公告1内容"
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
         return label
@@ -73,7 +76,7 @@ class FirstPageViewController: UIViewController {
     let contentText2: UILabel = {
         let label = UILabel()
         label.backgroundColor = UIColor.blue
-        label.text = "公告2内容。。。\n ....。.\n asdasdasdasdasdasdas。\n......\n ....。.\n asdasdasdasdasdasdas。\n......\n ....。.\n asdasdasdasdasdasdas。\n......\n ....。.\n asdasdasdasdasdasdas。\n......\n ....。.\n asdasdasdasdasdasdas。\n......\n ....。.\n asdasdasdasdasdasdas。\n......\n ....。.\n asdasdasdasdasdasdas。\n......\n ....。.\n asdasdasdasdasdasdas。\n......\n ....。.\n asdasdasdasdasdasdas。\n......\n ....。.\n asdasdasdasdasdasdas。\n......\n ....。.\n asdasdasdasdasdasdas。\n......\n ....。.\n asdasdasdasdasdasdas。\n......\n ....。.\n asdasdasdasdasdasdas。\n......\n ....。.\n asdasdasdasdasdasdas。\n......\n ....。.\n asdasdasdasdasdasdas。\n......\n ....。.\n asdasdasdasdasdasdas。\n......\n ....。.\n asdasdasdasdasdasdas。\n......\n ....。.\n asdasdasdasdasdasdas。\n......\n ....。.\n asdasdasdasdasdasdas。\n......"
+        label.text = "公告2内容"
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
         return label
@@ -89,10 +92,7 @@ class FirstPageViewController: UIViewController {
         
         view.addSubview(postsContainerView)
         setupPostsContainerView()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        processScrollImageView()
+        
     }
     
     func fetchFirsPageModel(){
@@ -119,6 +119,19 @@ class FirstPageViewController: UIViewController {
         titleText2.text = firstPageModel.getPost2Title()
         contentText2.text = firstPageModel.getPost2Content()
         //TODO: set remote image
+        let url = URL(string: "https://www.guiamania.com/wp-content/uploads/2009/09/31-180x180.jpg")!
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if error != nil{
+                print(error!)
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.remoteImage = UIImage(data: data!)
+                self.processScrollImageView()
+            }
+            
+        }.resume()
     }
     
     func setupPostsContainerView() {
@@ -190,7 +203,7 @@ class FirstPageViewController: UIViewController {
     
     func processScrollImageView(){
         var images = [UIImage]()
-        images = [UIImage(named:"date1")!,UIImage(named:"date2")!,UIImage(named:"date3")!,UIImage(named:"date4")!]
+        images = [remoteImage!,UIImage(named:"date2")!,UIImage(named:"date3")!,UIImage(named:"date4")!]
         var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
         for count in 0..<images.count{
             frame.origin.x = postImagesView.frame.size.width*CGFloat(count)
