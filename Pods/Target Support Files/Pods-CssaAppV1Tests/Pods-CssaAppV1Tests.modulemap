@@ -1,0 +1,6 @@
+framework module Pods_CssaAppV1Tests {
+  umbrella header "Pods-CssaAppV1Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
